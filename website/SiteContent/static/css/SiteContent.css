@@ -1,7 +1,10 @@
 body {
-  padding-top: 50px;
+  padding-top: 0px;
   position: relative;
+  background-color: #f1322f;
+  color: #ffffff;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
@@ -12,28 +15,12 @@ img {
 }
 
 .navbar-custom {
-    background-color:#229922;
-    color:#ffffff;
+    background-color:#f1322f;
+    color: #ffffff;
+    text-align: right;
     border-radius:0;
 }
 
 .navbar-custom .navbar-nav > li > a {
-    color:#fff;
-}
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #ffffff;
-    background-color:transparent;
-}
-.navbar-custom .navbar-brand {
-    color:#eeeeee;
-}
-
-#con .well {
-    height:400px;
-}
-
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%
 }
