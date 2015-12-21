@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2db377c-09af-442d-8862-a7a53ff1ea77" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/SiteContent/static/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/SiteContent/static/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/SiteContent/static/js/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/SiteContent/static/js/js/scripts.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/website/SiteContent/static/js/js/ie-emulation-modes-warning.js" afterPath="$PROJECT_DIR$/website/SiteContent/static/js/dist/ie-emulation-modes-warning.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/website/SiteContent/static/js/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/website/SiteContent/static/js/dist/ie10-viewport-bug-workaround.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/SiteContent/static/css/SiteContent.css" afterPath="$PROJECT_DIR$/website/SiteContent/static/css/SiteContent.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/basetemplate.html" afterPath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/basetemplate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/index.html" afterPath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html" afterPath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html" afterPath="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html" />
     </list>
     <ignored path="Website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +28,8 @@
       <file leaf-file-name="basetemplate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/basetemplate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -45,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,15 +71,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html">
+      <file leaf-file-name="Workshops.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.916667">
-              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.51">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,14 +102,14 @@
         <option value="$PROJECT_DIR$/website/website/settings.py" />
         <option value="$PROJECT_DIR$/website/SiteContent/views.py" />
         <option value="$PROJECT_DIR$/website/SiteContent/urls.py" />
-        <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html" />
         <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/papers.html" />
-        <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html" />
         <option value="$PROJECT_DIR$/website/SiteContent/static/css/styles.css" />
         <option value="$PROJECT_DIR$/website/SiteContent/static/js/js/scripts.js" />
         <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/index.html" />
         <option value="$PROJECT_DIR$/website/SiteContent/static/css/SiteContent.css" />
         <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/basetemplate.html" />
+        <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html" />
+        <option value="$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html" />
       </list>
     </option>
   </component>
@@ -710,25 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.916667">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/SiteContent/static/js/dist/ie10-viewport-bug-workaround.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -745,6 +718,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/SiteContent/static/js/dist/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3376622">
@@ -756,14 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/SiteContent/static/js/dist/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/SiteContent/static/css/SiteContent.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -772,10 +753,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/basetemplate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -783,11 +776,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/contact.html">
+    <entry file="file://$PROJECT_DIR$/website/SiteContent/templates/SiteContent/Workshops.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.51">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
