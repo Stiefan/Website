@@ -1,6 +1,7 @@
 {% load staticfiles %}
 
 <!-- Used Bootstrap Framework as Base template -->
+<!-- Used Cupid Template From http://www.bootstrapzero.com/bootstrap-template/cupid-single-page-bootstrap-template -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,43 +18,250 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/SiteContent.css" %}">
+    <link rel="stylesheet" href="{% static "css/css/SiteContent.css" %}">
+    <link rel="stylesheet" href="{% static "css/dist/animate.min.css" %}">
+    <!--<link rel="stylesheet" href="{% static "css/dist/style.css" %}">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static "js/js/javascript.js" %}"></script>
     <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
     <script src="{% static "js/dist/scripts.js" %}"></script>
     <script src="{% static "js/dist/ie-emulation-modes-warning.js" %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
   </head>
-    <body>
+  <body>
 
     <!-- Navbar -->
-      <nav class="navbar navbar-custom navbar-fixed-top">
+      <nav class="navbar navbar-custom navbar-fixed-top" style="clip: rect(auto, auto, auto, auto);">
         <div class="container">
           <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav" style="padding-top: 30px;">
-            <li><a href="{% url "SiteContent" %}">Home</a></li>
-            <li><a href="{% url "workshops" %}">Workshops</a></li>
-            <li><a href="{% url "papers" %}">Portfolio</a></li>
-            <li><a href="{% url "contact" %}">Contact</a></li>
+          <ul class="nav navbar-nav" style="padding-top: 10px;">
+              <li><a href="#index">Home</a></li>
+              <li><a href="#workshops">Workshops</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         </div>
       </nav>
 
-    <!-- Block Content -->
-    <div style=" padding-top: 50px; ">
-    {% block content %}
-    {% endblock %}
+    <!-- block 1: index -->
+    <div id="wrapper">
+        <div id="index" class="block">
+          <div class="container marketing">
+            <div class="starter-template">
+                <div class ="row featurette">
+                  <div class="col-md-6" style="margin-top: 100px; margin-bottom: 100px; padding-right: 60px;text-align:right; float:right;">
+                      <h1 style="margin-bottom: 30px; font-size:42px;">Agile Business Development through Rapid Prototyping</h1>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 2: Workshops -->
+        <div id="workshops" class="block">
+          <div class="container marketing">
+              <div class="starter-template">
+                  <div class ="row featurette">
+                      <div class="col-md-12" style="margin-top: 20px;margin-bottom: 10px;">
+                            <h1>Workshops</h1>
+                          <p>
+                              <span class="text-muted">Rapid Prototyping is a tool for ideation in multi-disciplinary teams: a loop to quickly hypothesize, develop, test and quantify ideas across experts from business development, IT, design, and your (potential) end-users.
+                              </span>
+                          </p>
+                      </div>
+                  </div>
+                  <div class ="row featurette">
+                      <div class ="col-md-6" style="margin-bottom: 50px;">
+                          <h2 style="margin-bottom: 20px;">
+                              <span class="text-muted">Behavior Design</span>
+                          </h2>
+                          <p>
+                              <span class="text-muted">In this workshop the focus lies on enabling the desired behavior of your target customer groups. The main focus lies on Triggers</span>
+                          </p>
+                      </div>
+                     <div class ="col-md-6" style="margin-bottom: 50px;">
+                          <h2 style="margin-bottom: 20px;">
+                              <span class="text-muted">Business Model Design</span>
+                          </h2>
+                          <p>
+                              <span class="text-muted">Parallel with ideation process comes the definition of the how and what of your organisation. </span>
+                          </p>
+                     </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Block 3: Portfolio -->
+        <div id="portfolio" class="block">
+          <div class="container marketing">
+              <div class="starter-template">
+                  <div class ="row featurette">
+                      <div class="col-md-12" style="margin-top: 20px;margin-bottom: 50px;">
+                          <h1>Portfolio</h1>
+                      </div>
+                  </div>
+                  <div class="row row-centered">
+                    <div class="col-lg-2 col-centered">
+                      <h2>Mita-Teknik A/S</h2>
+                      <p>Business Model Design for the patent on wind turbine optimization</p>
+                      <p><a href="#" role="button"><span class="text-muted"><strong>More Info.. &raquo;</strong></span></a></p>
+                    </div>
+                    <div class="col-lg-3 col-centered">
+                      <h2>Entrepreneurship For Society</h2>
+                      <p>Workshop on Behavior Design at Leiden University</p>
+                      <p><a href="#" role="button"><span class="text-muted"><strong>More Info.. &raquo;</strong></span></a></p>
+                    </div>
+                    <div class="col-lg-2 col-centered">
+                      <h2>Trac.FM</h2>
+                      <p>Business Model Design for expansion of current value proposition</p>
+                      <p><a href="#" role="button"><span class="text-muted"><strong>More Info.. &raquo;</strong></span></a></p>
+                    </div>
+                      <div class="col-lg-2 col-centered">
+                      <h2>Agile For Excellence</h2>
+                      <p>Workshop in collaboration with Nuon on Behavior Design</p>
+                      <p><a href="#" role="button"><span class="text-muted"><strong>More Info.. &raquo;</strong></span></a></p>
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+
+        <div class="clr"></div>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/1.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/2.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/3.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/4.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/5.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/6.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/7.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="portfolio-block"><img src="images/projects/8.jpg" alt="Protect" />
+                <div class="portfolio-caption text-center animated">
+                    <h3 class="animated">Portfolio Item #1</h3>
+
+                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+        <!-- Block 4: Contact -->
+        <div id="contact" class="block">
+          <div class="container marketing">
+              <div class="starter-template">
+                  <div class ="row featurette">
+                      <div class="col-md-12" style="margin-top: 20px;margin-bottom: 50px;">
+                          <h1>Contact</h1>
+                      </div>
+                  </div>
+                    <div class ="row featurette">
+                      <div class ="col-md-6 col-centered" style="margin-bottom: 50px;">
+                          <p>
+                              <span class="text-muted">Want to know more? Feel free to contact me.</span>
+                          </p>
+                      </div>
+                        <div class="clearfix"></div>
+                            <div class="info text-center">
+                                <ul class="social-icons list-inline">
+                                    <li class="last"><a href="mailto:s.j.marges@gmail.com"><span class="glyphicon glyphicon-text-width" aria-hidden="true"></span></a></li>
+                                    <li class="last"><a href="mailto:s.j.marges@gmail.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+          </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <div class="container marketing">
-      <hr class="featurette-divider">
-      <footer>
-        <p>&copy; 2015 De Rossige Leeuw &middot; <a href="#">Terms</a></p>
-      </footer>
-    </div>
+    <footer class="footer navbar-fixed-bottom">
+        <div class="container">
+            <p style="margin-top: 10px;">&copy; De Rossige Leeuw, 2015.</p>
+         </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
