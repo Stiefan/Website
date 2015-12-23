@@ -5,8 +5,5 @@ from . import views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.SiteContent, name='SiteContent'),
-    url(r'^about', views.About, name='about'),
     url(r'^workshops', views.Workshops, name='workshops'),
-    url(r'^papers', views.Papers, name='papers'),
-    url(r'^contact', views.Contact, name='contact'),
 ]

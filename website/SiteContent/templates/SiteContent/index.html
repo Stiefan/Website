@@ -1,13 +1,217 @@
-{% extends "SiteContent/basetemplate.html" %}
 {% load staticfiles %}
-{% block content %}
-      <div class="container marketing">
-        <div class="starter-template">
-            <div class ="row featurette">
-              <div class="col-md-6" style="margin-top: 100px; margin-bottom: 100px; padding-right: 60px;text-align:right; float:right;">
-                  <h1 style="margin-bottom: 30px; font-size:42px;">Agile Business Development through Rapid Prototyping</h1>
-              </div>
+
+<!-- Used Bootstrap Framework as Base template -->
+<!-- Used Template elements from Cupid http://www.bootstrapzero.com/bootstrap-template/cupid-single-page-bootstrap-template -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="description" content="">
+         <meta name="author" content="Stefan Marges">
+         <link rel="icon" href="../../favicon.ico">
+
+         <title>De Rossige Leeuw</title>
+
+         <!--Bootstrap & Third Party CSS -->
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="{% static "css/dist/animate.min.css" %}">
+         <!--<link rel="stylesheet" href="{% static "css/dist/style.css" %}">
+         <!-- Own CSS -->
+         <link rel="stylesheet" href="{% static "css/css/SiteContent.css" %}">
+
+         <!-- Bootstrap & Third Party js -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <script src="{% static "js/js/javascript.js" %}"></script>
+         <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
+         <script src="{% static "js/dist/scripts.js" %}"></script>
+         <script src="{% static "js/dist/ie-emulation-modes-warning.js" %}"></script>
+         <script src="{% static "js/dist/wow.min.js" %}"></script>
+         <script src="{% static "js/dist/site.js" %}"></script>
+         <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-custom navbar-fixed-top" style="clip: rect(auto, auto, auto, auto);">
+            <div class="container">
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" style="padding-top: 10px;">
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#workshops">Workshops</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+        <div id="wrapper">
+
+            <!-- block 1: index -->
+            <section class="index" id="index">
+                <div class="container marketing">
+                    <div class="starter-template">
+                        <div class ="row featurette">
+                            <div class="col-md-6" style="margin-top: 100px; margin-bottom: 100px; padding-right: 60px;text-align:right; float:right;">
+                                <h1 style="margin-bottom: 30px; font-size:42px;">Agile Business Development through Rapid Prototyping</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 2: Workshops -->
+            <section class="workshops" id="workshops">
+                <div class="container marketing">
+                    <div class="starter-template">
+                        <div class ="row featurette">
+                            <div class="col-md-6 col-centered" style="margin-top: 20px;margin-bottom: 10px;">
+                                <h1>Workshops</h1>
+                                <p>
+                                    <span class="text-muted">Rapid Prototyping is a tool for ideation in multi-disciplinary teams: a loop to quickly hypothesize, develop, test and quantify ideas across experts from business development, IT, design, and your (potential) end-users.
+                                    <br><br></span>
+                                    <h4>We offer the following workshops</h4>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 highlight-boxes">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-delay="750ms">
+                                <div class="featured-content-box text-center">
+                                    <i class="tn-heart ico-lg text-warning"></i>
+                                    <h3><span class="text-muted">Behavior Design</span></h3>
+                                    <p><span class="text-muted">In this workshop the focus lies on enabling the desired behavior of your target customer groups. The main focus lies on Triggers</span></p>
+                                    <button class="btn"><a href="{% url 'workshops' %}"><span class="text-muted text-white">More Info</span></a></button>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeInRight" data-wow-delay="750ms">
+                                <div class="featured-content-box text-center">
+                                    <i class="tn-heart ico-lg text-warning"></i>
+                                    <h3><span class="text-muted">Business Model Design</span></h3>
+                                    <p><span class="text-muted">Parallel with ideation process comes the definition of the how and what of your organisation. </span></p>
+                                    <br>
+                                    <button class="btn"><a href="{% url 'workshops' %}"><span class="text-muted text-white">More Info</span></a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 3: Portfolio -->
+            <section class="portfolio" id="portfolio">
+                <div class="container marketing">
+                      <div class="starter-template">
+                          <div class ="row featurette">
+                              <div class="col-md-12 text-center inner-page" style="margin-top: 20px;margin-bottom: 10px;">
+                                  <h1>Portfolio</h1>
+                              </div>
+                              <div class="col-md-6 col-centered text-center inner-page">
+                              <span class="text-muted">Rapid Prototyping is a tool for ideation in multi-disciplinary teams: a loop to quickly hypothesize, develop, test and quantify ideas across experts from business development, IT, design, and your (potential) end-users.
+                              </span>
+                          </div>
+                      </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="portfolio-block"><img src="{% static "img/MT_Logo.png" %}" alt="Protect" />
+                                <div class="portfolio-caption text-center animated">
+                                    <h3 class="animated">Mita-Teknik A/S</h3>
+
+                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="portfolio-block"><img src="{% static "img/E4S_Logo.png" %}" alt="Protect" />
+                                <div class="portfolio-caption text-center animated">
+                                    <h3 class="animated">Entrepreneurship For Society</h3>
+
+                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="portfolio-block"><img src="{% static "img/A4E_Logo.png" %}" alt="Protect" />
+                                <div class="portfolio-caption text-center animated">
+                                    <h3 class="animated">Agile For Excellence</h3>
+
+                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="portfolio-block"><img src="{% static "img/TracFM.png" %}" alt="Protect" />
+                                <div class="portfolio-caption text-center animated">
+                                    <h3 class="animated">Trac.FM</h3>
+
+                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
+                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Block 4: Contact -->
+            <section class="contact" id="contact">
+                <div class="container marketing">
+                    <div class="starter-template">
+                        <div class ="row featurette">
+                            <div class="col-md-12" style="margin-top: 20px;margin-bottom: 10px;">
+                                <h1>Contact</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-centered" style="margin-bottom: 30px;">
+                                <p>
+                                    <span class="text-muted">Want to know more? Let's get in touch.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                            </div>
+                            <div class="col-md-5">
+                                <img class="img-circle" src="{% static "img/ProfilePicture.jpg" %}" /><br>
+                                <h4><span class="text-muted"><strong>Contact Details </strong></span></h4>
+                                <ul style="text-align:left;">
+                                    <li><i class="icon-map-marker"></i> Lekstraat 43, 2515XA Den Haag, The Netherlands</li>
+                                    <li><i class="icon-phone"></i> +31 650730507</li>
+                                    <li><i class="icon-envelope"></i> <a href="mailto:hello@derossigeleeuw.nl">hello@derossigeleeuw.nl</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>  
-{% endblock %}
+
+        <!-- Footer -->
+        <footer class="footer navbar-fixed-bottom">
+            <div class="container">
+                <p style="margin-top: 10px;">&copy; De Rossige Leeuw, 2015.</p>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
+        <script src="{% static "js/dist/ie10-viewport-bug-workaround.js" %}"></script>
+    </body>
+</html>

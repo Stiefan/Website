@@ -1,9 +1,25 @@
+@import url("//fonts.googleapis.com/css?family=Arvo:400,700|Raleway:400,300,500|Open+Sans:400,700,900,300");
+
+*{
+    font-family: 'Raleway',serif;
+    font-weight: 300;
+
+    letter-spacing: 0.4px;
+}
+
+
 body {
   padding-top: 0px;
   position: relative;
   background-color: #f1322f;
   color: #f1322f;
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *{
+      font-family: 'Arvo',serif;
+      font-weight: 400;
+  }
 
 .starter-template {
   padding: 40px 15px;
@@ -17,15 +33,15 @@ img {
 .navbar-custom {
     text-align: right;
     border-radius:0;
-    background-color:#f1322f;
+    background-color: rgba(241,50,47,0.7);
 }
 
 .navbar-custom .navbar-nav > li > a {
     color: #ffffff;
 }
 
-#index, #portfolio {
-  background: url(../img/backgroundRed.jpg) no-repeat center center fixed;
+#index{
+  background: url(../../img/backgroundRed.jpg) no-repeat center center fixed;
   display: table;
   height:100vh;
   position: relative;
@@ -35,8 +51,8 @@ img {
   color: #ffffff !important;
 }
 
-#workshops, #contact {
-  background: url(../img/backgroundWhite.jpg) no-repeat center center fixed;
+#workshops, #contact, #portfolio  {
+  background: url(../../img/backgroundWhite.jpg) no-repeat center center fixed;
   display: table;
   height:100vh;
   position: relative;
@@ -49,7 +65,7 @@ img {
 .footer{
     width:100%;
     min-height:20px;
-    background-color: #f1322f;
+    background-color: rgba(241,50,47,0.7);
     color: #ffffff;
 }
 
@@ -66,6 +82,7 @@ img {
     text-align:center;
     margin-right:30px;
     margin-left:30px;
+    margin-bottom:30px;
 }
 
 span.glyphicon-envelope, span.glyphicon-text-width {
@@ -135,3 +152,30 @@ span.glyphicon-envelope, span.glyphicon-text-width {
     animation-name: fadeInRight;
     -webkit-animation-delay: 200ms;
     animation-delay: 200ms;
+}
+
+.center-div {
+    margin:0 auto;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.highlight-boxes .featured-content-box{
+    border: 0;
+    padding: 20px;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+}
