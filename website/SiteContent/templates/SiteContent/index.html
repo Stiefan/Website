@@ -1,217 +1,453 @@
 {% load staticfiles %}
-
-<!-- Used Bootstrap Framework as Base template -->
-<!-- Used Template elements from Cupid http://www.bootstrapzero.com/bootstrap-template/cupid-single-page-bootstrap-template -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-         <meta charset="utf-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         <meta name="description" content="">
-         <meta name="author" content="Stefan Marges">
-         <link rel="icon" href="../../favicon.ico">
 
-         <title>De Rossige Leeuw</title>
+<head>
 
-         <!--Bootstrap & Third Party CSS -->
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="{% static "css/dist/animate.min.css" %}">
-         <!--<link rel="stylesheet" href="{% static "css/dist/style.css" %}">
-         <!-- Own CSS -->
-         <link rel="stylesheet" href="{% static "css/css/SiteContent.css" %}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Stefan Marges">
+    <link rel="icon" href="{% static "img/logo/logo1.png" %}">
 
-         <!-- Bootstrap & Third Party js -->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-         <script src="{% static "js/js/javascript.js" %}"></script>
-         <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
-         <script src="{% static "js/dist/scripts.js" %}"></script>
-         <script src="{% static "js/dist/ie-emulation-modes-warning.js" %}"></script>
-         <script src="{% static "js/dist/wow.min.js" %}"></script>
-         <script src="{% static "js/dist/site.js" %}"></script>
-         <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <title>Rapid Prototypers</title>
 
-    </head>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 
-    <body>
+    <!-- Theme CSS -->
+    <link  rel="stylesheet" href="{% static "css/css/SiteContent.css"%}">
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-custom navbar-fixed-top" style="clip: rect(auto, auto, auto, auto);">
-            <div class="container">
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" style="padding-top: 10px;">
-                        <li><a href="#index">Home</a></li>
-                        <li><a href="#workshops">Workshops</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static "js/dist/ie-emulation-modes-warning.js" %}"></script>
+    <script src="{% static "js/dist/wow.min.js" %}"></script>
+
+    <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About The Workshops</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <!-- block 1: index -->
+            <section class="landing_block" id="landing_block">
+                <div class="container marketing">
+                    <div class="starter-template">
+                        <div class ="row featurette">
+                            <div class="col-md-6" style="margin-top: 200px; margin-bottom: 100px; padding-right: 60px;text-align:right; float:right;">
+                                <h1 style="margin-bottom: 30px; font-size:42px;">Rapid Prototyping</h1>
+                                <h2 style="margin-bottom: 30px; font-size:22px;">Facilitating ideation workshops for products and business models </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <br>
                 </div>
             </div>
-        </nav>
-
-        <div id="wrapper">
-
-            <!-- block 1: index -->
-            <section class="index" id="index">
-                <div class="container marketing">
-                    <div class="starter-template">
-                        <div class ="row featurette">
-                            <div class="col-md-6" style="margin-top: 100px; margin-bottom: 100px; padding-right: 60px;text-align:right; float:right;">
-                                <h1 style="margin-bottom: 30px; font-size:42px;">Agile Business Development through Rapid Prototyping</h1>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Ik geef voor startende ondernemers een workshop met startpunt het idee of de uitdaging van de participant zijn/haar bedrijf. Het is doel van de workshop is niet om binnen 2 uur van een idee naar een bedrijf te komen, maar om een "prototype" mindset te creëren.</p>
                 </div>
-            </section>
-
-            <!-- Block 2: Workshops -->
-            <section class="workshops" id="workshops">
-                <div class="container marketing">
-                    <div class="starter-template">
-                        <div class ="row featurette">
-                            <div class="col-md-6 col-centered" style="margin-top: 20px;margin-bottom: 10px;">
-                                <h1>Workshops</h1>
-                                <p>
-                                    <span class="text-muted">Rapid Prototyping is a tool for ideation in multi-disciplinary teams: a loop to quickly hypothesize, develop, test and quantify ideas across experts from business development, IT, design, and your (potential) end-users.
-                                    <br><br></span>
-                                    <h4>We offer the following workshops</h4>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 highlight-boxes">
-                            <div class="col-md-6 wow fadeInLeft" data-wow-delay="750ms">
-                                <div class="featured-content-box text-center">
-                                    <i class="tn-heart ico-lg text-warning"></i>
-                                    <h3><span class="text-muted">Behavior Design</span></h3>
-                                    <p><span class="text-muted">In this workshop the focus lies on enabling the desired behavior of your target customer groups. The main focus lies on Triggers</span></p>
-                                    <button class="btn"><a href="{% url 'workshops' %}"><span class="text-muted text-white">More Info</span></a></button>
-                                </div>
-                            </div>
-                            <div class="col-md-6 wow fadeInRight" data-wow-delay="750ms">
-                                <div class="featured-content-box text-center">
-                                    <i class="tn-heart ico-lg text-warning"></i>
-                                    <h3><span class="text-muted">Business Model Design</span></h3>
-                                    <p><span class="text-muted">Parallel with ideation process comes the definition of the how and what of your organisation. </span></p>
-                                    <br>
-                                    <button class="btn"><a href="{% url 'workshops' %}"><span class="text-muted text-white">More Info</span></a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <p>Hierbij gebruik ik een "Rapid Prototyping" methode om stap voor stap te gaan van doelgroep, naar minimum viable product, tot het meten van de impact, en uiteindelijk de beslissing om door te gaan of juist af te wenden. Wat ik wil bereiken hiermee is dat de participant (a) een tool krijgt om (b) bewust te worden dat elk nieuw idee, elke nieuwe aanname dient te worden getest in een zo vroeg mogelijk stadium.</p>
                 </div>
-            </section>
-
-            <!-- Block 3: Portfolio -->
-            <section class="portfolio" id="portfolio">
-                <div class="container marketing">
-                      <div class="starter-template">
-                          <div class ="row featurette">
-                              <div class="col-md-12 text-center inner-page" style="margin-top: 20px;margin-bottom: 10px;">
-                                  <h1>Portfolio</h1>
-                              </div>
-                              <div class="col-md-6 col-centered text-center inner-page">
-                              <span class="text-muted">Rapid Prototyping is a tool for ideation in multi-disciplinary teams: a loop to quickly hypothesize, develop, test and quantify ideas across experts from business development, IT, design, and your (potential) end-users.
-                              </span>
-                          </div>
-                      </div>
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="portfolio-block"><img src="{% static "img/MT_Logo.png" %}" alt="Protect" />
-                                <div class="portfolio-caption text-center animated">
-                                    <h3 class="animated">Mita-Teknik A/S</h3>
-
-                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
-                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="portfolio-block"><img src="{% static "img/E4S_Logo.png" %}" alt="Protect" />
-                                <div class="portfolio-caption text-center animated">
-                                    <h3 class="animated">Entrepreneurship For Society</h3>
-
-                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
-                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="portfolio-block"><img src="{% static "img/A4E_Logo.png" %}" alt="Protect" />
-                                <div class="portfolio-caption text-center animated">
-                                    <h3 class="animated">Agile For Excellence</h3>
-
-                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
-                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="portfolio-block"><img src="{% static "img/TracFM.png" %}" alt="Protect" />
-                                <div class="portfolio-caption text-center animated">
-                                    <h3 class="animated">Trac.FM</h3>
-
-                                    <a href="#" class="btn btn-social btn-skype btn-sm animated"><i class="tn-plus"></i></a>
-                                    <a href="#" class="btn btn-social btn-stack-overflow btn-sm animated"><i class="tn-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Block 4: Contact -->
-            <section class="contact" id="contact">
-                <div class="container marketing">
-                    <div class="starter-template">
-                        <div class ="row featurette">
-                            <div class="col-md-12" style="margin-top: 20px;margin-bottom: 10px;">
-                                <h1>Contact</h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-centered" style="margin-bottom: 30px;">
-                                <p>
-                                    <span class="text-muted">Want to know more? Let's get in touch.</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
-                            </div>
-                            <div class="col-md-5">
-                                <img class="img-circle" src="{% static "img/ProfilePicture.jpg" %}" /><br>
-                                <h4><span class="text-muted"><strong>Contact Details </strong></span></h4>
-                                <ul style="text-align:left;">
-                                    <li><i class="icon-map-marker"></i> Lekstraat 43, 2515XA Den Haag, The Netherlands</li>
-                                    <li><i class="icon-phone"></i> +31 650730507</li>
-                                    <li><i class="icon-envelope"></i> <a href="mailto:hello@derossigeleeuw.nl">hello@derossigeleeuw.nl</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer navbar-fixed-bottom">
-            <div class="container">
-                <p style="margin-top: 10px;">&copy; De Rossige Leeuw, 2015.</p>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/MT_Logo.png" %}">
+
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/A4E_Logo.png" %}">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/E4S_Logo.png" %}">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/TracFM.png" %}">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/CFI.svg" %}">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-responsive" alt="Protect" src="{% static "img/portfolio/THI.png" %}">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+
+    <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-12">
+                            <h3>Contact</h3>
+                            <p><a href="mailto:s.j.marges@gmail.com?Subject=Hello%20There!" target="_top"><strong>S.J.Marges@gmail.com</strong></a></p>
+
+                            <p>Lekstraat 43<br>2515XA, Den Haag</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            Copyright <img src="{% static "img/logo/logo1.png" %}" style="height:20px; width: 20px; opacity: 0.3;"> De Rossige Leeuw 2016
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
-        <script src="{% static "js/dist/ie10-viewport-bug-workaround.js" %}"></script>
-    </body>
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/MT_Logo.png" %}">
+                            <hr class="star-primary">
+                            <p>Mita-Teknik is a Danish Wind Energy Company in Wind Turbine Control. This project encapsulated the process from an idea to solve a technical problem into a viable business model.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://www.mita-teknik.com/">Mita-Teknik</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Business Model Design</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/A4E_Logo.png" %}">
+                            <hr class="star-primary">
+                            <p>As part of the Agile For Excellence convention we provided a workshop focusing on ideation together with use cases from a Dutch Energy Provider. In this workshop attendees created showcases by quickly finding out what works and does not work by testing and pivoting ideas.</p>
+                            <ul class="list-inline item-details">
+                                <li class="item-text">Client:
+                                    <strong><a href="http://www.agileforexcellence.org/">Agile For Excellence</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">December 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Ideation Workshop</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                           <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/E4S_Logo.png" %}">
+                            <hr class="star-primary">
+                            <p>As part of the Entrepreneuship for Society programme, we facilitated a 3 hour workshop where start-ups were challenged to think about the behaviorial aspects of their value proposition. </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://centre4innovation.org/">Entrepreneurship For Society</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">September 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Rapid Prototyping Workshop</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/TracFM.png" %}">
+                            <hr class="star-primary">
+                            <p>TracFM provides a solution to hold citizen centered interactive Radio polls. The project contained an exploration for a business model supporting further expansion of the organization. </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="https://tracfm.org/">TracFM</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Business Model Design</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/CFI.svg" %}">
+                            <hr class="star-primary">
+                            <p>As part of the Venture Academy programme, we facilitated a 3 hour workshop where start-ups were challenged to think about the behaviorial aspects of their value proposition. </p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://centre4innovation.org/">Venture Academy</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">Februari 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Rapid Prototyping</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" alt="Protect" src="{% static "img/portfolio/THI.png" %}">
+                            <hr class="star-primary">
+                            <p>As part of The Hague Innovators Academy we facilitated a rapid prototyping workshop for 10 start-ups to create their first prototype to test on real customers.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://centre4innovation.org/events/the-hague-innovators-academy">The Hague Innovators Academy</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">September 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Rapid Prototyping</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static "js/dist/bootstrap.min.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="{% static "js/js/jqBootstrapValidation.js" %}"></script>
+    <script src="{% static "js/js/contact.js"%}"></script>
+    <script src="{% static "js/js/Scripts.min.js" %}"></script>
+
+</body>
+
 </html>
