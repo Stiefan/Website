@@ -16,17 +16,17 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p^^55e83%3trebv8*wy1id^ve8mb^!l3*7d(z1kuj5(+jo=ifm'
+#SECRET_KEY = 'p^^55e83%3trebv8*wy1id^ve8mb^!l3*7d(z1kuj5(+jo=ifm'
+
+#Read secret key from a file
+with open('/etc/secret_key.txt') as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['web0104.zxcs.nl']
 
 # Application definition
 
@@ -71,6 +71,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'website.wsgi.application'
 
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
