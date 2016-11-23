@@ -174,7 +174,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: url(../../img/BG-1GRIJS.png) no-repeat bottom;
+  background: url(/home/u11275d26494/public_html/img/BG-1GRIJS.png) no-repeat bottom;
 
   color: white;
   background-color: #747070;
@@ -498,7 +498,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 #landing_block {
-  background: url(../../img/BG-1.png) no-repeat left fixed;
+  background: url(/home/u11275d26494/public_html/img/BG-1.png) no-repeat left fixed;
   height:100vh;
   width:100vw;
   display: table;
